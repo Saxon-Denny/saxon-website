@@ -1,5 +1,5 @@
-.container{
-    font-family: 'Montserrat', sans-serif;
+body{
+    scroll-behavior: smooth;
 }
 
 .header{
@@ -24,13 +24,14 @@
     left: 30px;
     top: 20%;
     color: #FAFAFA;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'pt sans', cursive;
 }
 
 .header nav{
     position: absolute;
     right: 10px;
-    bottom: 5px;  
+    bottom: 5px; 
+    font-family: 'ropa sans', sans-serif; 
 }
 
 .header nav ul li{
@@ -42,6 +43,19 @@
     color: #FAFAFA;
 }
 
+.header nav ul li a{
+    text-decoration: none;
+}
+
+.header nav ul li a:visited{
+   color: #FAFAFA;
+}
+
+.header nav ul li a:hover{
+    color: rgb(77, 233, 168);
+    text-decoration: underline;
+ }
+
 .title{
     width: 100%;
     height: 700px;
@@ -51,6 +65,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-top: 105px;
+    font-family: 'Istok Web';
   
 }
 
@@ -66,7 +82,7 @@
 }
 
 .name-color{
-    color: #40D869;
+    color: rgb(77, 233, 168);
     font-weight: bold;
 
 }
@@ -84,26 +100,268 @@
 }
 
 .role-color{
-    color: hotpink;
-    background-color: #FAFAFA ;
-    padding: 3px;
+    color: #A744B4;
+    background-color: #FAFAFA;
+    width: 100%;
+    padding: 7px;
     margin: 5px;
 }
+
 .about{
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-color: #0F0F0F;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.4fr;
+    grid-template-rows: 0.3fr 1fr 0.7fr;
+}
+
+.about h3{
+    color:#FAFAFA; 
+    position: absolute; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 10%;
+    width: 10%;
+    left: 30px;
+    top: 20px;
+    font-size: 40px;
+    font-family: 'Istok Web';
+}
+
+.about-content p{
+    color:#FAFAFA;
+    font-size: 20px; 
+    font-family: 'pt sans', sans-serif;
+}
+
+.about-content{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: absolute;
+    left: 30px;
+}
+
+.about h3 span{
+    position: absolute;
+    top: -125px;
+}
+
+.purple{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 70%;
+    height: 80%;
+    background-color: #A744B4;
+    position: absolute;
+    bottom: 0px;
+    left: 10px; 
+    text-align: center;
+    -webkit-transition: 4s ease-in-out;
+    -moz-transition: 4s ease-in-out;
+    -o-transition: 4s ease-in-out;
+    transition: 4s ease-in-out;
+}
+
+.about:hover .purple{
+    border-radius: 20px;
+}
+
+.eye{
+    -webkit-transition: 4s all ease-out;
+    -moz-transition: 4s all ease-out;
+    -o-transition: 4s all ease-out;
+    transition: 4s all ease-out;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: #A744B4;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+}
+
+.about:hover .eye{
+    background-color: #93D89D;
+}
+
+.yellow{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 20%;
+    height: 40%;
+    background-color: #C39604;
+    position: absolute;
+    bottom: 0px;
+}
+
+.blue{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 50%;
+    height: 70%;
+    background-color: #24ABB1;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.green{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 40%;
+    height: 70%;
+    background-color: #93D89D;
+    position: absolute;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    -webkit-transition: 4s all ease-out;
+    -moz-transition: 4s all ease-out;
+    -o-transition: 4s all ease-out;
+    transition: 4s all ease-out;
+}
+
+.green-container{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.about:hover .green{
+    top: 537px;
+    -webkit-transform: rotate(180deg);
+    border-radius: 2px 20px 2px 20px;  
+}
+
+.tail-container{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 80px;
+    height: 100px;
+    -webkit-transition: 4s ease-in-out;
+    -moz-transition: 4s ease-in-out;
+    -o-transition: 4s ease-in-out;
+    transition: 4s ease-in-out; 
+}
+
+.about:hover .tail-container{
+    transform: translate(22px, -75px);
+}
+
+.tail-left{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #A744B4;
+    width: 35px;
+    height: 50px;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.tail-right{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #A744B4;
+    width: 35px;
+    height: 50px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.tail-center{
+    position: absolute;
+    right: 22px;
+    bottom: 0px;
+    background-color: #A744B4;
+    width: 35px;
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.water-container{
+    display: inline-block;
+    position: center;
+    height: 40px;
+    width: 60px;
+    -webkit-transition: all 4s ease-in-out;
+    -moz-transition: all 4s ease-in-out;
+    -o-transition: all 4s ease-in-out;
+    transition: all 4s ease-in-out;
+}
+.about:hover .water-container{
+    transform: translate(0px, -45px);
+}
+
+.water-left{
+    position: absolute;
+    left: 0px;
+    border-left:dashed 3px #A744B4;  
+    border-top:dashed 3px #A744B4; 
+    border-right:dashed 3px #A744B4; 
+    border-radius: 60px 60px 0px 0px;
+    height: 100%;
+    width: 42%;
+    -webkit-transition: all 4s ease-in-out;
+    -moz-transition: all 4s ease-in-out;
+    -o-transition: all 4s ease-in-out;
+    transition: all 4s ease-in-out;
+}
+.about:hover .water-left{
+    border-color: #93D89D;
+}
+
+.water-right{
+    position: absolute;
+    right: 0px; 
+    border-left:dashed 3px #A744B4; 
+    border-right:dashed 3px #A744B4; 
+    border-top:dashed 3px #A744B4; 
+    border-radius: 60px 60px 0px 0px;
+    height: 100%;
+    width: 42%;
+    -webkit-transition: all 4s ease-in-out;
+    -moz-transition: all 4s ease-in-out;
+    -o-transition: all 4s ease-in-out;
+    transition: all 4s ease-in-out;
+}
+
+.about:hover .water-right{
+    border-color: #93D89D;
+}
+
+.portfolio{
+    width: 100%;
+    height: 1000px;
+    background-image: url(../assets/camera.jpg);
     background-size: cover;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    font-family: 'Istok Web';
+  
 }
 
-.about h3{
-    color:#FAFAFA;  
-}
-
-.about p{
-    color:#FAFAFA; 
+.portfolio h3 span{
+    position: absolute;
+    top: -105px;
 }

@@ -12,9 +12,12 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Amiri|Architects+Daughter|Istok+Web|PT+Sans|Ropa+Sans" rel="stylesheet"> 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <style>  </style>
     </head>
-    
+
     <body class="container">
         
         <header class="header">
@@ -24,8 +27,8 @@
             <nav>
                 <ul>
                 <li>Home</li>
-                <li>About</li>
-                <li>Portfolio</li>
+                <li><a href="#about-id">About</a></li>
+                <li><a href="#portfolio-id">Portfolio</a></li>
                 <li>Contact</li>
                 </ul>
             </nav>
@@ -43,8 +46,8 @@
             </section>
 
             <article class="about">
-                <h3>About</h3>
-                <div>
+                <h3><span id="about-id"></span>About</h3>
+                <div class=about-content>
                     <p>
                         Thanks for checking out my page.<br>
                         <br>
@@ -60,20 +63,33 @@
                         <br>
                         Before aiming to be a Web-Developer I worked in Sales, from Exec to Management, 
                         I’ve covered most bases. I decided on learning to code as I wanted to challenge myself 
-                        with a new career and continually push myself within a creative industry whilst using logical 
-                        thinking, it pretty much ticked all the boxes.<br>
+                        within a creative industry whilst using logical 
+                        thinking.<br>
                         <br>
                         Thanks for reading and please feel free to check out my portfolio below.
                     </p>
                 </div>
-                <div class="purple"></div>
-                <div class="green"></div>
-                <div class="blue"></div>
-                <div class="yellow"></div>
+
+                    <div class="purple">
+                        <div class="eye"></div>
+                        <div class="tail-container">
+                            <div class="tail-left"></div>
+                            <div class="tail-right"></div>
+                            <div class="tail-center"></div>
+                        </div>
+                        <div class="water-container">
+                            <div class="water-right"></div>
+                            <div class="water-left"></div>
+                        </div>
+                    </div>
+                    <div class="green"></div>
+                    <div class="blue"></div>
+                    <div class="yellow"></div>
+                </div>
             </article>
 
             <article class="portfolio">
-                <h2>Portfolio</h2>
+                <h3><span id="portfolio-id"></span>Portfolio</h3>
                 <figure></figure>
                 <figure></figure>
                 <figure></figure>
