@@ -1,11 +1,11 @@
 body{
-    scroll-behavior: smooth;
+   scroll-behavior: smooth; 
 }
 
 .header{
     width: 100%;
     height: 100px;
-    background-color: #7690A0;
+    background-color: rgba(118, 144, 160, 0.95);
     position: relative;
     border: 3px solid grey;
     position: fixed;
@@ -45,6 +45,7 @@ body{
 
 .header nav ul li a{
     text-decoration: none;
+    color: #FAFAFA;
 }
 
 .header nav ul li a:visited{
@@ -52,9 +53,56 @@ body{
 }
 
 .header nav ul li a:hover{
-    color: rgb(77, 233, 168);
+    color: #4DE9A8;
     text-decoration: underline;
  }
+
+ #home-id{
+    position: absolute;
+    top: 0px;
+ }
+
+ .header-name span{
+    -webkit-transition: 0.5s ease-in-out;
+    -webkit-transition-delay: 2s;
+    -moz-transition: 0.5s ease-in-out;
+    -moz-transition-delay: 2s;
+    -o-transition: 0.5s ease-in-out;
+    -ms-transition-delay: 2s;
+    transition: 0.5s ease-in-out; 
+    transition-delay: .2s;
+ }
+
+ .letter-one:hover{
+   color: #4DE9A8;
+ }
+ .letter-two:hover{
+    color: #4DE9A8;
+  }
+  .letter-three:hover{
+    color: #4DE9A8;
+  }
+  .letter-four:hover{
+    color: #4DE9A8;
+  }
+  .letter-five:hover{
+    color: #4DE9A8;
+  }
+  .letter-six:hover{
+    color: #4DE9A8;
+  }
+  .letter-seven:hover{
+    color: #4DE9A8;
+  }
+  .letter-eight:hover{
+    color: #4DE9A8;
+  }
+  .letter-nine:hover{
+    color: #4DE9A8;
+  }
+  .letter-ten:hover{
+    color: #4DE9A8;
+  }
 
 .title{
     width: 100%;
@@ -67,7 +115,6 @@ body{
     grid-template-rows: 1fr 1fr;
     margin-top: 105px;
     font-family: 'Istok Web';
-  
 }
 
 .title h1{
@@ -82,7 +129,7 @@ body{
 }
 
 .name-color{
-    color: rgb(77, 233, 168);
+    color: #4DE9A8;
     font-weight: bold;
 
 }
@@ -100,7 +147,7 @@ body{
 }
 
 .role-color{
-    color: #A744B4;
+    color: hotpink;
     background-color: #FAFAFA;
     width: 100%;
     padding: 7px;
@@ -137,6 +184,14 @@ body{
     color:#FAFAFA;
     font-size: 20px; 
     font-family: 'pt sans', sans-serif;
+}
+
+.about-content p a{
+    color: #00e6b8; 
+}
+
+.about-content p a:visited{
+    color: #00e6b8; 
 }
 
 .about-content{
@@ -307,6 +362,7 @@ body{
     -o-transition: all 4s ease-in-out;
     transition: all 4s ease-in-out;
 }
+
 .about:hover .water-container{
     transform: translate(0px, -45px);
 }
@@ -325,6 +381,7 @@ body{
     -o-transition: all 4s ease-in-out;
     transition: all 4s ease-in-out;
 }
+
 .about:hover .water-left{
     border-color: #93D89D;
 }
@@ -357,11 +414,90 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    font-family: 'Istok Web';
-  
+    font-family: 'Istok Web'; 
 }
 
 .portfolio h3 span{
     position: absolute;
     top: -105px;
 }
+
+.contact{
+    width: 100%;
+    height: 555px;;
+    background-image: url(../assets/rotary.jpg);
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-family: 'pt sans', sans-serif;
+}
+
+.contact h3 span{
+    position: absolute;
+    top: -105px;
+}
+
+.contact-details{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+    justify-self: center;
+    text-align: center; 
+}
+
+.contact-details p{
+    display: block;
+    font-size: 30px;
+    color: #FAFAFA;
+    text-shadow: 1px 1px 2px black;
+    padding: 5px;
+}
+
+.contact-details p a{
+    color: #FAFAFA;
+}
+
+.contact-details p a:visited{
+     color: #FAFAFA;
+}
+
+.contact h3{
+    color:#FAFAFA; 
+    position: absolute; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 10%;
+    width: 10%;
+    left: 30px;
+    top: 20px;
+    font-size: 40px;
+    font-family: 'Istok Web';
+}
+
+.footer{
+    width: 100%;
+    height: 40px;
+    background-color: #7690A0;
+    border: 3px solid grey;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+}
+
+.icon-bar{
+    display: inline-block;
+    margin-top: 10px;  
+}
+
+.icon-bar a{
+   color: #FAFAFA;
+   padding: 0px 10px 0px 10px;
+   font-size: 20px;
+}
+
