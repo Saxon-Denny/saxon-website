@@ -3,30 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Saxons Denny</title>
+    <title>Saxon Denny</title>
     <meta name="description" content="Saxon-Webpage-Portfolio"> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="manifest" href="site.webmanifest">
     <place favicon.ico in the root directory>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Amiri|Architects+Daughter|Istok+Web|PT+Sans|Ropa+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Tinos|Cabin+Sketch|Barrio|Amiri|Poiret+One|Special+Elite|Major+Mono+Display|Monoton|Poiret+One|Istok+Web|PT+Sans|Ropa+Sans" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="javascript/index-scroll.js"></script>
+    <script src="javascript/scroll-reveal.js"></script>
+    <script src="javascript/typewriter.js"></script>
+
     </head>
 
     <body class="container">
         
         <header class="header" id="header-id">
-            <div class="header-div">
                 <a href="#home-id">
                     <div class="header-name">
-                        <h2><span class="letter-one">S</span><span class="letter-two">a</span><span class="letter-three">x</span><span class="letter-four">o</span><span class="letter-five">n</span>
-                            <span class="letter-six">D</span><span class="letter-seven">e</span><span class="letter-eight">n</span><span class="letter-nine">n</span><span class="letter-ten">y</span>
+                        <h2><span>S</span><span>a</span><span>x</span><span>o</span><span>n</span>
+                            <span>D</span><span>e</span><span>n</span><span>n</span><span>y</span>
                         </h2>
                     </div>
                 </a>
-            </div>
             <nav>
                 <ul>
                     <li><a href="#home-id">Home</a></li>
@@ -44,7 +48,12 @@
                 <h1>Hello, my name is <span class="name-color">Saxon.</span></h1>
                 <div class="role-title">
                     <h2>I am looking for a</h2>
-                    <h2 class="role-color">Junior Web Development</h2>
+                    <div class="role-background">
+                        <h2 class="role-color">Junior Web Developer</h2>
+                        <img src="assets/spinner1.png" width="48" height="auto" class="rotating">
+                        <img src="assets/spinner1.png" width="48" height="auto" class="rotating-one">
+                        <img src="assets/spinner.png" width="48" height="auto" class="rotating-two">
+                    </div>
                     <h2>role based in Bristol</h2>
                 </div>
             </section>
@@ -52,7 +61,7 @@
             <article class="about">
                 <h3><span id="about-id"></span>About</h3>
                 <div class=about-content>
-                    <p>
+                   <p>
                         Thanks for checking out my page.<br>
                         <br>
                         I recently finished a 3-month full-time Web-Development Course in Bristol with <a href="https://developme.training/" target="blank">DevelopMe</a>. 
@@ -62,7 +71,7 @@
                         <br>
                         Currently, my main skills lie with HTML, CSS, JavaScript, WordPress, React and React Native. 
                         However, I am developing my Redux and backend knowledge further, 
-                        alongside just starting out with Swift. During the course I also gained a keen 
+                        alongside starting out with Swift. During the course I gained a keen 
                         interest in UX design, wire-framing and web-design using Adobe XD. <br>
                         <br>
                         Before aiming to be a Web-Developer I worked in Sales, 
@@ -95,23 +104,41 @@
 
             <article class="portfolio">
                 <h3><span id="portfolio-id"></span>Portfolio</h3>
-                <figure></figure>
-                <figure></figure>
-                <figure></figure>
-                <figure></figure>
-
-                <div class="random-list">
-                    <div class="js-list"></div>
-                    <div class="css-list"></div>
-                    <div class="react-list"></div>
+                <section class="project-left">
+                    <div class="project-one" id="ProOne">
+                        <p>Static Websites</p>
+                    </div>
+                    <div class="project-two" id="ProTwo">
+                        <p>React/React Native</p>
+                    </div>
+                    <div class="project-three" id="ProThree">
+                        <p>JavaScript</p>
+                    </section>
                 </div>
+                <section class="project-right">
+                    <div class="project-four" id="ProFour">
+                        <p>WordPress</p>
+                    </div>
+                    <div class="project-five" id="ProFive">
+                        <p>Wire-framing & Designs</p>
+                    </div>
+                    <div class="project-six" id=ProSix>
+                        <p>CSS</p>
+                    </div>
+                </section>
             </article>
             
             <article class="contact">
                 <h3><span id="contact-id"></span>Contact</h3>
-                <div class=contact-details>
-                    <p><a href="mailto:saxondenny@live.com?subject=Hello">saxondenny@live.co.uk</a></p>
-                    <p>07554660968</p>
+                <div class="contact-details">
+                    <div class=buttons>
+                        <button class= "buttonEmail" onclick="typeWriterEmail()">Email</button>
+                        <button class= "buttonPhone" onclick="typeWriterPhone()">Telephone</button>
+                    </div>  
+                    <div class="contact-info">
+                        <a id= "linkToEmail" href= "mailto:saxondenny@live.co.uk?subject=Hello"></a>
+                        <p id="number"></p>
+                    </div>
                 </div>
             </article>
         </main>
@@ -125,4 +152,5 @@
         </footer>
 
     </body>
+
 </html>

@@ -1,30 +1,23 @@
-body{
-   scroll-behavior: smooth; 
-}
 
 .header{
     width: 100%;
-    height: 100px;
-    background-color: rgba(118, 144, 160, 0.95);
+    height: 103px;
+    background-color: rgba(51, 51, 51, 0.95);
     position: relative;
-    border: 3px solid grey;
+    border-bottom: 3px solid #FAFAFA;
     position: fixed;
     top: 0px;
     overflow: hidden;
     z-index: +1;
 }
 
-.header-div{
-    width: 30%;
-}
-
 .header h2 {
-    font-size: 60px;
+    font-size: 55px;
     position: absolute;
     left: 30px;
-    top: 20%;
+    top: 25%;
     color: #FAFAFA;
-    font-family: 'pt sans', cursive;
+    font-family: 'Major Mono Display', cursive;
 }
 
 .header nav{
@@ -36,16 +29,18 @@ body{
 
 .header nav ul li{
     display: inline-block;
-	padding: 10px;
-	border: 0px solid #000;
+	padding-right: 15px;
     border-spacing: 10px;
     font-size: 25px;
-    color: #FAFAFA;
 }
 
 .header nav ul li a{
     text-decoration: none;
     color: #FAFAFA;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; 
 }
 
 .header nav ul li a:visited{
@@ -73,48 +68,25 @@ body{
     transition-delay: .2s;
  }
 
- .letter-one:hover{
+.header-name span:hover{
    color: #4DE9A8;
  }
- .letter-two:hover{
-    color: #4DE9A8;
-  }
-  .letter-three:hover{
-    color: #4DE9A8;
-  }
-  .letter-four:hover{
-    color: #4DE9A8;
-  }
-  .letter-five:hover{
-    color: #4DE9A8;
-  }
-  .letter-six:hover{
-    color: #4DE9A8;
-  }
-  .letter-seven:hover{
-    color: #4DE9A8;
-  }
-  .letter-eight:hover{
-    color: #4DE9A8;
-  }
-  .letter-nine:hover{
-    color: #4DE9A8;
-  }
-  .letter-ten:hover{
-    color: #4DE9A8;
-  }
 
 .title{
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-image: url(../assets/web-design.jpg);
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin-top: 105px;
-    font-family: 'Istok Web';
+    font-family: 'pt sans', sans-serif;
+    color: #FAFAFA;
+    font-size: 50px;
 }
 
 .title h1{
@@ -123,15 +95,12 @@ body{
     grid-row-start: 1;
     grid-row-end: 2;
     position: absolute;
-    bottom: 30%;
-    color: #FAFAFA;
-    font-size: 50px;
+    bottom: 20%;
 }
 
 .name-color{
     color: #4DE9A8;
     font-weight: bold;
-
 }
 
 .role-title{
@@ -139,19 +108,61 @@ body{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-}
-
-.role-title{
     color: #FAFAFA;
     font-size: 40px;
 }
 
-.role-color{
-    color: hotpink;
+.role-background{
     background-color: #FAFAFA;
+    display: grid;
     width: 100%;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    margin: 5px 0px 5px 0px;
+}
+
+.role-color{
+    color: #ff69b4;
     padding: 7px;
     margin: 5px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.role-background img{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+.rotating {
+    margin-left: 30px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s  linear infinite;
+    animation:spin 4s linear infinite; 
+}
+
+.rotating-one {
+    margin-left: 75px;
+    -webkit-animation:spin 4s reverse linear infinite;
+    -moz-animation:spin 4s reverse linear infinite;
+    animation:spin 4s reverse linear infinite;
+}
+
+.rotating-two {
+    margin-left: 120px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
 }
 
 .about{
@@ -159,31 +170,29 @@ body{
     height: 600px;
     background-color: #0F0F0F;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 0.4fr;
     grid-template-rows: 0.3fr 1fr 0.7fr;
+    font-family: 'pt sans', sans-serif;
+    color:#FAFAFA;
+    font-size: 20px;
 }
 
-.about h3{
-    color:#FAFAFA; 
-    position: absolute; 
+.about h3{ 
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     height: 10%;
     width: 10%;
+    position: absolute;
     left: 30px;
     top: 20px;
     font-size: 40px;
-    font-family: 'Istok Web';
-}
-
-.about-content p{
-    color:#FAFAFA;
-    font-size: 20px; 
-    font-family: 'pt sans', sans-serif;
 }
 
 .about-content p a{
@@ -407,66 +416,27 @@ body{
 
 .portfolio{
     width: 100%;
-    height: 1000px;
+    height: 800px;
     background-image: url(../assets/camera.jpg);
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    font-family: 'Istok Web'; 
+    grid-template-rows: 0.1fr 1fr;
+    font-family: 'pt sans', sans-serif;
+    color: #FAFAFA;
+    border-bottom: solid 3px #0F0F0F;
 }
 
 .portfolio h3 span{
     position: absolute;
-    top: -105px;
+    top: -125px;
 }
 
-.contact{
-    width: 100%;
-    height: 555px;;
-    background-image: url(../assets/rotary.jpg);
-    background-size: cover;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    font-family: 'pt sans', sans-serif;
-}
-
-.contact h3 span{
-    position: absolute;
-    top: -105px;
-}
-
-.contact-details{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    align-self: center;
-    justify-self: center;
-    text-align: center; 
-}
-
-.contact-details p{
-    display: block;
-    font-size: 30px;
-    color: #FAFAFA;
-    text-shadow: 1px 1px 2px black;
-    padding: 5px;
-}
-
-.contact-details p a{
-    color: #FAFAFA;
-}
-
-.contact-details p a:visited{
-     color: #FAFAFA;
-}
-
-.contact h3{
-    color:#FAFAFA; 
+.portfolio h3{
     position: absolute; 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -477,15 +447,133 @@ body{
     left: 30px;
     top: 20px;
     font-size: 40px;
-    font-family: 'Istok Web';
+}
+
+.project-left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+}
+
+.portfolio div{
+    text-align: center;
+    margin: 20px;
+    width: 500px;
+    height: 200px;
+    border: solid 1px #FAFAFA;
+    border-radius: 30px;
+    background-color: rgba(31, 30, 30, 0.6);
+}
+.portfolio div p{
+    margin-top: 10px;
+}
+
+.project-right{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+}
+
+.contact{
+    color:#FAFAFA; 
+    width: 100%;
+    height: 650px;
+    background-size: auto 100%;
+    background-image: url(../assets/rotary.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-family: 'pt sans', sans-serif;
+}
+
+.contact h3 span{
+    position: absolute;
+    top: -125px;
+}
+
+.contact-details{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+    justify-self: center;
+    text-align: center; 
+    height: 50%;
+}
+
+.contact-info{
+    font-family: 'Istok Web', sans-serif;
+    display: block;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #1a1919;
+}
+
+.contact-info p{
+    padding: 10px;
+}
+
+.contact-info a{
+    color: #FAFAFA;
+    padding: 10px;
+}
+
+.contact h3{
+    position: absolute; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 10%;
+    width: 10%;
+    left: 30px;
+    top: 20px;
+    font-size: 40px;
+}
+
+.buttons{
+    margin: 20px;
+}
+
+.buttons button{
+    font-family: 'Special Elite', 'cursive'; 
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    color: #FAFAFA;
+    width: 80px;
+    padding: 4px;
+    border-radius: 20px;
+    border: none;
+}
+
+.buttons button:hover{
+    transform: scale(.8);
+    cursor: pointer;
+}
+
+.buttonPhone{
+    background-color: #a74646;
+}
+
+.buttonEmail{
+    background-color: #4e8c97;
 }
 
 .footer{
     width: 100%;
     height: 40px;
-    background-color: #7690A0;
-    border: 3px solid grey;
-    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.95);
+    border-top: 3px solid #FAFAFA;
     text-align: center;
     justify-content: center;
 }
@@ -500,4 +588,3 @@ body{
    padding: 0px 10px 0px 10px;
    font-size: 20px;
 }
-
