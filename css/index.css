@@ -167,8 +167,8 @@
 
 .about{
     width: 100%;
-    height: 600px;
-    background-color: #0F0F0F;
+    height: 900px;
+    background-color: #333333;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -210,6 +210,7 @@
     grid-row-end: 3;
     position: absolute;
     left: 30px;
+    line-height: 24pt;
 }
 
 .about h3 span{
@@ -223,7 +224,7 @@
     grid-row-start: 3;
     grid-row-end: 4;
     width: 70%;
-    height: 80%;
+    height: 60%;
     background-color: #A744B4;
     position: absolute;
     bottom: 0px;
@@ -310,7 +311,7 @@
 }
 
 .about:hover .green{
-    top: 537px;
+    top: 807px;
     -webkit-transform: rotate(180deg);
     border-radius: 2px 20px 2px 20px;  
 }
@@ -481,7 +482,7 @@
 .contact{
     color:#FAFAFA; 
     width: 100%;
-    height: 650px;
+    height: 630px;
     background-size: auto 100%;
     background-image: url(../assets/rotary.jpg);
     background-size: cover;
@@ -550,14 +551,15 @@
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     color: #FAFAFA;
-    width: 80px;
-    padding: 4px;
+    width: 100px;
+    padding: 10px;
     border-radius: 20px;
     border: none;
+    font-size: 15px;
 }
 
 .buttons button:hover{
-    transform: scale(.8);
+    transform: scale(1.2);
     cursor: pointer;
 }
 
