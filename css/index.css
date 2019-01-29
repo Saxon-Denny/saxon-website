@@ -10,7 +10,6 @@
     overflow: hidden;
     z-index: +1;
 }
-
 .header h2 {
     font-size: 55px;
     position: absolute;
@@ -19,21 +18,19 @@
     color: #FAFAFA;
     font-family: 'Major Mono Display', cursive;
 }
-
 .header nav{
     position: absolute;
     right: 10px;
     bottom: 5px; 
     font-family: 'ropa sans', sans-serif; 
+    width: 350px;
 }
-
 .header nav ul li{
     display: inline-block;
 	padding-right: 15px;
     border-spacing: 10px;
     font-size: 25px;
 }
-
 .header nav ul li a{
     text-decoration: none;
     color: #FAFAFA;
@@ -42,22 +39,18 @@
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out; 
 }
-
 .header nav ul li a:visited{
    color: #FAFAFA;
 }
-
 .header nav ul li a:hover{
     color: #4DE9A8;
     text-decoration: underline;
  }
-
  #home-id{
     position: absolute;
     top: 0px;
  }
-
- .header-name span{
+ .header h2 span{
     -webkit-transition: 0.5s ease-in-out;
     -webkit-transition-delay: 2s;
     -moz-transition: 0.5s ease-in-out;
@@ -67,18 +60,15 @@
     transition: 0.5s ease-in-out; 
     transition-delay: .2s;
  }
-
-.header-name span:hover{
+.header h2 span:hover{
    color: #4DE9A8;
  }
-
 .title{
     width: 100%;
     height: 800px;
     background-image: url(../assets/web-design.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
     display: grid;
@@ -88,7 +78,6 @@
     color: #FAFAFA;
     font-size: 50px;
 }
-
 .title h1{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -97,12 +86,10 @@
     position: absolute;
     bottom: 20%;
 }
-
 .name-color{
     color: #4DE9A8;
     font-weight: bold;
 }
-
 .role-title{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -111,7 +98,6 @@
     color: #FAFAFA;
     font-size: 40px;
 }
-
 .role-background{
     background-color: #FAFAFA;
     display: grid;
@@ -120,7 +106,6 @@
     grid-template-rows: 1fr;
     margin: 5px 0px 5px 0px;
 }
-
 .role-color{
     color: #ff69b4;
     padding: 7px;
@@ -130,7 +115,6 @@
     grid-row-start: 1;
     grid-row-end: 2;
 }
-
 .role-background img{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -138,33 +122,27 @@
     grid-row-end: 2;
     align-self: center;
 }
-
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-
 .rotating {
     margin-left: 30px;
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s  linear infinite;
     animation:spin 4s linear infinite; 
 }
-
 .rotating-one {
     margin-left: 75px;
     -webkit-animation:spin 4s reverse linear infinite;
     -moz-animation:spin 4s reverse linear infinite;
     animation:spin 4s reverse linear infinite;
 }
-
 .rotating-two {
     margin-left: 120px;
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
-
 .about{
     width: 100%;
     height: 900px;
@@ -181,7 +159,6 @@
     color:#FAFAFA;
     font-size: 20px;
 }
-
 .about h3{ 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -194,15 +171,12 @@
     top: 20px;
     font-size: 40px;
 }
-
 .about-content p a{
     color: #00e6b8; 
 }
-
 .about-content p a:visited{
     color: #00e6b8; 
 }
-
 .about-content{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -212,12 +186,10 @@
     left: 30px;
     line-height: 24pt;
 }
-
 .about h3 span{
     position: absolute;
     top: -125px;
 }
-
 .purple{
     grid-column-start: 2;
     grid-column-end: 4;
@@ -235,11 +207,9 @@
     -o-transition: 4s ease-in-out;
     transition: 4s ease-in-out;
 }
-
 .about:hover .purple{
     border-radius: 20px;
 }
-
 .eye{
     -webkit-transition: 4s all ease-out;
     -moz-transition: 4s all ease-out;
@@ -251,13 +221,11 @@
     background-color: #A744B4;
     position: absolute;
     top: 50px;
-    left: 180px;
+    left: 30%;
 }
-
 .about:hover .eye{
     background-color: #93D89D;
 }
-
 .yellow{
     grid-column-start: 1;
     grid-column-end: 4;
@@ -269,7 +237,6 @@
     position: absolute;
     bottom: 0px;
 }
-
 .blue{
     grid-column-start: 3;
     grid-column-end: 4;
@@ -282,7 +249,6 @@
     right: 0px;
     top: 0px;
 }
-
 .green{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -300,7 +266,6 @@
     -o-transition: 4s all ease-out;
     transition: 4s all ease-out;
 }
-
 .green-container{
     width: 100%;
     height: 100%;
@@ -309,13 +274,11 @@
     grid-row-start: 1;
     grid-row-end: 2;
 }
-
 .about:hover .green{
     top: 807px;
     -webkit-transform: rotate(180deg);
     border-radius: 2px 20px 2px 20px;  
 }
-
 .tail-container{
     position: absolute;
     right: 0px;
@@ -327,11 +290,9 @@
     -o-transition: 4s ease-in-out;
     transition: 4s ease-in-out; 
 }
-
 .about:hover .tail-container{
     transform: translate(22px, -75px);
 }
-
 .tail-left{
     position: absolute;
     left: 0px;
@@ -341,7 +302,6 @@
     height: 50px;
     border-radius: 0px 20px 0px 20px;
 }
-
 .tail-right{
     position: absolute;
     right: 0px;
@@ -351,7 +311,6 @@
     height: 50px;
     border-radius: 20px 0px 20px 0px;
 }
-
 .tail-center{
     position: absolute;
     right: 22px;
@@ -361,7 +320,6 @@
     height: 50px;
     border-radius: 10px 10px 0px 0px;
 }
-
 .water-container{
     display: inline-block;
     position: center;
@@ -372,11 +330,9 @@
     -o-transition: all 4s ease-in-out;
     transition: all 4s ease-in-out;
 }
-
 .about:hover .water-container{
     transform: translate(0px, -45px);
 }
-
 .water-left{
     position: absolute;
     left: 0px;
@@ -391,11 +347,9 @@
     -o-transition: all 4s ease-in-out;
     transition: all 4s ease-in-out;
 }
-
 .about:hover .water-left{
     border-color: #93D89D;
 }
-
 .water-right{
     position: absolute;
     right: 0px; 
@@ -410,11 +364,9 @@
     -o-transition: all 4s ease-in-out;
     transition: all 4s ease-in-out;
 }
-
 .about:hover .water-right{
     border-color: #93D89D;
 }
-
 .portfolio{
     width: 100%;
     height: 800px;
@@ -431,12 +383,10 @@
     color: #FAFAFA;
     border-bottom: solid 3px #0F0F0F;
 }
-
 .portfolio h3 span{
     position: absolute;
     top: -125px;
 }
-
 .portfolio h3{
     position: absolute; 
     grid-column-start: 1;
@@ -449,7 +399,6 @@
     top: 20px;
     font-size: 40px;
 }
-
 .project-left{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -457,7 +406,6 @@
     grid-row-end: 3;
     justify-self: center;
 }
-
 .portfolio div{
     text-align: center;
     margin: 20px;
@@ -466,11 +414,13 @@
     border: solid 1px #FAFAFA;
     border-radius: 30px;
     background-color: rgba(31, 30, 30, 0.6);
+    font-size: 20px;
 }
 .portfolio div p{
-    margin-top: 10px;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 28px;
 }
-
 .project-right{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -478,7 +428,23 @@
     grid-row-end: 3;
     justify-self: center;
 }
-
+.skills-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr;
+}
+.skills-one{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.skills-two{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
 .contact{
     color:#FAFAFA; 
     width: 100%;
@@ -494,12 +460,10 @@
     grid-template-rows: 1fr 1fr;
     font-family: 'pt sans', sans-serif;
 }
-
 .contact h3 span{
     position: absolute;
     top: -125px;
 }
-
 .contact-details{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -510,23 +474,19 @@
     text-align: center; 
     height: 50%;
 }
-
 .contact-info{
     font-family: 'Istok Web', sans-serif;
     display: block;
     font-size: 30px;
     text-shadow: 2px 2px 2px #1a1919;
 }
-
 .contact-info p{
     padding: 10px;
 }
-
 .contact-info a{
     color: #FAFAFA;
     padding: 10px;
 }
-
 .contact h3{
     position: absolute; 
     grid-column-start: 1;
@@ -539,11 +499,9 @@
     top: 20px;
     font-size: 40px;
 }
-
 .buttons{
     margin: 20px;
 }
-
 .buttons button{
     font-family: 'Special Elite', 'cursive'; 
     -webkit-transition: all 1s ease-in-out;
@@ -557,16 +515,13 @@
     border: none;
     font-size: 15px;
 }
-
 .buttons button:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
-
 .buttonPhone{
     background-color: #a74646;
 }
-
 .buttonEmail{
     background-color: #4e8c97;
 }
@@ -579,14 +534,134 @@
     text-align: center;
     justify-content: center;
 }
-
 .icon-bar{
     display: inline-block;
     margin-top: 10px;  
 }
-
 .icon-bar a{
    color: #FAFAFA;
    padding: 0px 10px 0px 10px;
    font-size: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .portfolio div{
+        width: 300px;
+    }
+    .header h2 {
+        position: absolute;
+        left: 50%;
+        margin-left: -224px;
+        top: 2px;
+    }
+    .header nav{
+        position: absolute;
+        width: 400px;
+        right: 49%;
+        margin-right: -200px;
+    }
+    .header nav ul li{
+        padding-right: 30px;
+    }
+    .about{
+    height: 1200px;
+    }
+    .about:hover .green{
+        top: 1087px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+    .portfolio div{
+        width: 250px;
+        font-size: 15px;
+    }
+    .portfolio div p{
+        margin: 10px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .about{
+        font-size: 18px;
+        }
+}
+
+@media only screen and (max-width: 650px) {
+    .about{
+        height: 1200px;
+    }
+    .about:hover .green{
+            top: 1137px;
+    }
+    .purple{
+        height: 40%;
+    }
+    .green{
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .portfolio{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr;
+        height: 1500px;
+    }
+    .portfolio div{
+        width: 300px;
+    }
+    .project-left{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .project-right{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .header h2 {
+        position: absolute;
+        left: 50%;
+        margin-left: -224px;
+        top: 2px;
+    }
+    .header nav{
+        position: absolute;
+        width: 400px;
+        right: 49%;
+        margin-right: -200px;
+    }
+    .header nav ul li{
+        padding-right: 30px;
+    }
+    .about{
+        height: 1500px;
+    }
+    .about:hover .green{
+            top: 1437px;
+    }
+    .purple{
+        height: 30%;
+    }
+    .green{
+        height: 30%;
+    }
+      .yellow{
+          height: 30%;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: .1fr 1fr .1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .header h2 {
+        position: absolute;
+        top: 2px;
+        font-size: 40px;
+        margin-left: -170px;
+    }
 }
